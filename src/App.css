@@ -1,5 +1,27 @@
 .App {
   text-align: center;
+  background: url(./images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+
+  /* ? can't figure out how to dynamically set this height  */
+  min-height: 3000px;
+}
+
+.background-opacity{
+	content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.4);
+
+	/* ? can't figure out how to dynamically set this height  */
+	min-height: 3000px;
 }
 
 .App-logo {
@@ -35,4 +57,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.transparent-container {
+	background: rgba(241, 242, 244, 0.8);
 }
