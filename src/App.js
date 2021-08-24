@@ -5,7 +5,7 @@ import { SuccessfulOrder } from './components/SuccessfulOrder';
 import { Dashboard } from './components/Dashboard/Dashboard';
 import './App.css';
 import { Text } from 'atomize';
-import { Error } from './components/Error';
+import { ErrorScreen } from './components/Error';
 
 class App extends Component {
 	constructor(props) {
@@ -58,7 +58,7 @@ class App extends Component {
 
 					{/* Standard Error page */}
 					{currentScreen === 'Error' &&
-						<Error />
+						<ErrorScreen />
 					}
 				</div>
 			</div>

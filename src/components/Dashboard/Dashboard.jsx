@@ -1,4 +1,4 @@
-import { Button, Container, Div, Icon, Notification, Text } from "atomize";
+import { Button, Div, Icon, Notification, Text } from "atomize";
 import { Component } from "react";
 import { getPizza } from "../../apis";
 import { AllOrders } from "./AllOrders";

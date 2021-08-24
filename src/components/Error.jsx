@@ -1,6 +1,6 @@
-import { Button, Div, Icon, Text } from "atomize";
+import { Div, Icon, Text } from "atomize";
 
-export const Error = () => {
+export const ErrorScreen = () => {
 
 	return (
 		<>
