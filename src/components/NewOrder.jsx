@@ -87,7 +87,7 @@ export class NewOrder extends Component {
 			<Div transform='translateY(5rem)'>
 				<Text tag="h2" textSize="display1">New Pizza Order</Text>
 
-				<form onSubmit={this.handleSubmit}>
+				<form id='newOrder' onSubmit={this.handleSubmit}>
 					{newOrders.map((order, i) => {
 						return (
 							<Container

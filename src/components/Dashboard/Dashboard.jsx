@@ -30,16 +30,20 @@ export class Dashboard extends Component {
 			this.changeUpdateOrders(false);
 		}
 
-		// update list of orders based on filter
-		let filteredOrders = this.state.orders;
-		let filters = {
-			'Crust': this.state.filCrust,
-			'Flavor': this.state.filFlavor,
-			'Size': this.state.filSize,
-			'Table_No': this.state.filTableNo ? parseInt(this.state.filTableNo) : undefined
-		};
+		// update list of orders based on filters if filter changed
+		this.updateFilteredOrders(prevState);
+	}
 
+	updateFilteredOrders = (prevState) => {
 		if (this.didFilterChange(prevState, this.state)) {
+			let filteredOrders = this.state.orders;
+			let filters = {
+				'Crust': this.state.filCrust,
+				'Flavor': this.state.filFlavor,
+				'Size': this.state.filSize,
+				'Table_No': this.state.filTableNo ? parseInt(this.state.filTableNo) : undefined
+			};
+
 			filteredOrders = filteredOrders.map(order => {
 				if ((filters.Crust !== undefined && order.Crust !== filters.Crust)
 					|| (filters.Flavor !== undefined && order.Flavor !== filters.Flavor)
@@ -57,6 +61,7 @@ export class Dashboard extends Component {
 	}
 
 	didFilterChange = (prevState, state) => {
+		if (prevState === undefined) return false;
 		// TODO - find better solution
 		return (prevState.filCrust !== state.filCrust)
 			|| (prevState.filFlavor !== state.filFlavor)
