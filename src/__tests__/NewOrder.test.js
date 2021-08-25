@@ -3,11 +3,11 @@ import renderer from 'react-test-renderer';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { Container, Text } from 'atomize';
-import { NewOrder } from './components/NewOrder';
-import { CrustOption } from './components/NewOrderOptions/CrustOption';
-import { FlavorOption } from './components/NewOrderOptions/FlavorOption';
-import { SizeOption } from './components/NewOrderOptions/SizeOption';
-import { TabelNoOption } from './components/NewOrderOptions/TableNoOption';
+import { NewOrder } from '../components/NewOrder';
+import { CrustOption } from '../components/NewOrderOptions/CrustOption';
+import { FlavorOption } from '../components/NewOrderOptions/FlavorOption';
+import { SizeOption } from '../components/NewOrderOptions/SizeOption';
+import { TabelNoOption } from '../components/NewOrderOptions/TableNoOption';
 Enzyme.configure({ adapter: new Adapter() });
 
 test('NewOrder Snapshot', () => {

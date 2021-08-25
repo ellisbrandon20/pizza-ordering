@@ -1,10 +1,10 @@
 import React from 'react';
-import App from './App';
+import App from '../App';
 import renderer from 'react-test-renderer';
 import Enzyme, { mount, shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { Button, Input, Text } from 'atomize';
-import { Login } from './components/Login';
+import { Login } from '../components/Login';
 Enzyme.configure({ adapter: new Adapter() });
 
 

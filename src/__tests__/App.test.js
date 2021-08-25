@@ -1,14 +1,14 @@
 import React from 'react';
-import App from './App';
+import App from '../App';
 import renderer from 'react-test-renderer';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { Text } from 'atomize';
-import { Login } from './components/Login';
-import { Dashboard } from './components/Dashboard/Dashboard';
-import { NewOrder } from './components/NewOrder';
-import { SuccessfulOrder } from './components/SuccessfulOrder';
-import { ErrorScreen } from './components/Error';
+import { Login } from '../components/Login';
+import { Dashboard } from '../components/Dashboard/Dashboard';
+import { NewOrder } from '../components/NewOrder';
+import { SuccessfulOrder } from '../components/SuccessfulOrder';
+import { ErrorScreen } from '../components/Error';
 Enzyme.configure({ adapter: new Adapter() });
 
 

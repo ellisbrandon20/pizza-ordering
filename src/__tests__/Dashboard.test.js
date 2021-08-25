@@ -3,9 +3,9 @@ import renderer from 'react-test-renderer';
 import Enzyme, { mount, shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { Button, Text } from 'atomize';
-import { Dashboard } from './components/Dashboard/Dashboard';
-import { AllOrders } from './components/Dashboard/AllOrders';
-import { Filter } from './components/Dashboard/Filter';
+import { Dashboard } from '../components/Dashboard/Dashboard';
+import { AllOrders } from '../components/Dashboard/AllOrders';
+import { Filter } from '../components/Dashboard/Filter';;
 Enzyme.configure({ adapter: new Adapter() });
 
 const order = {
@@ -18,7 +18,7 @@ const order = {
 
 test('Dashbaord Snapshot', () => {
 	const wrapper = renderer.create(<Dashboard />).toJSON();
-	expect(wrapper).toMatchSnapshot();
+	expect(wrapper).toMatchSnapshot(); ``
 });
 
 test('should render Start New Order Button', () => {

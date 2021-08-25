@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import { SuccessfulOrder } from './components/SuccessfulOrder';
+import { SuccessfulOrder } from '../components/SuccessfulOrder';
 import { Button, Text } from 'atomize';
 Enzyme.configure({ adapter: new Adapter() });
 
