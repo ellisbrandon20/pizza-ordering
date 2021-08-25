@@ -18,7 +18,7 @@ const order = {
 
 test('Dashbaord Snapshot', () => {
 	const wrapper = renderer.create(<Dashboard />).toJSON();
-	expect(wrapper).toMatchSnapshot(); ``
+	expect(wrapper).toMatchSnapshot();
 });
 
 test('should render Start New Order Button', () => {
