@@ -73,7 +73,7 @@ test('should render AllOrders component', () => {
 
 test('ComponentDidMount', () => {
 	const componentDidMountSpy = jest.spyOn(Dashboard.prototype, 'componentDidMount');
-	const component = mount(<Dashboard />);
+	mount(<Dashboard />);
 	expect(componentDidMountSpy).toHaveBeenCalled();
 	componentDidMountSpy.mockReset();
 	componentDidMountSpy.mockRestore();

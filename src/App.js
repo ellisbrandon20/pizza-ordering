@@ -3,9 +3,9 @@ import { Login } from './components/Login';
 import { NewOrder } from './components/NewOrder';
 import { SuccessfulOrder } from './components/SuccessfulOrder';
 import { Dashboard } from './components/Dashboard/Dashboard';
-import './App.css';
 import { Text } from 'atomize';
 import { ErrorScreen } from './components/Error';
+import './App.css';
 
 class App extends Component {
 	constructor(props) {

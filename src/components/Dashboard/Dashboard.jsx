@@ -128,7 +128,6 @@ export class Dashboard extends Component {
 					Successfully Deleted Pizza
 				</Notification>
 
-
 				<Div m={{ b: '5rem' }} transform='translateY(5rem)'>
 					<Div
 						w="50rem"

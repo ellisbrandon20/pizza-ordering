@@ -1,6 +1,5 @@
 import { Div, Label, Radiobox, Text } from "atomize";
 
-
 export const FlavorOption = ({ flavor, index, changeSelection }) => {
 	return (
 		<>

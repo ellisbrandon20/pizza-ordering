@@ -1,6 +1,5 @@
 import { Div, Input, Text } from "atomize";
 
-
 export const TabelNoOption = ({ tableNo, index, changeSelection }) => {
 	return (
 		<>

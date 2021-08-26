@@ -1,8 +1,5 @@
 import JWTMgr from "./JWTMgr";
 
-// ? - Why Async/Await
-// ? - what other options could i have done
-
 // ? - where to store token
 //! - cross-site scripting (xss) - local storage
 //! - cross-site request forgery (CSRF) - cookie storage
@@ -55,6 +52,4 @@ export async function deleteOrder(id) {
 
 		return response.json();
 	});
-
-
 }

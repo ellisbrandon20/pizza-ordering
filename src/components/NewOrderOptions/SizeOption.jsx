@@ -1,6 +1,5 @@
 import { Div, Label, Radiobox, Text } from "atomize";
 
-
 export const SizeOption = ({ size, index, changeSelection }) => {
 	return (
 		<>

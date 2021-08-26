@@ -91,19 +91,6 @@ export class Order extends Component {
 						>
 							<Icon name="DeleteSolid" size="20px" color="white" />
 						</Button>
-						{/* <Button
-							
-						>
-							<Icon
-								name="DeleteSolid"
-								size="2rem"
-
-
-							// hoverColor
-
-							/>
-						</Button> */}
-
 					</Col>
 				</Row>
 			</Container>
