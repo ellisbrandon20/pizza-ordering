@@ -1,3 +1,26 @@
+# Jimmy's Pizzeria
+
+This is a Front-End project to the [Order Pizza API](https://order-pizza-api.herokuapp.com/api/ui/#/) built with create-react-app. This project uses the Atomize UI library to help build out styled buttons, input forms, and grid layouts.
+
+This application allows you to View, Create, and Delete Pizza orders as an employee at Jimmy's Pizzeria. When viewing all current orders you can filter various categories to view specific orders.
+
+To run the application:
+
+1. install dependencies -> `npm i`
+1. run the unit tests -> `npm test`
+1. run the application locally -> `npm start`
+1. Visit [http://localhost:3000/](http://localhost:3000/)
+
+Within application use the following login credentials:
+
+    username: test
+    password: test
+
+<br/><br/><br/><br/>
+
+See original README below generated from create-react-app
+
+----------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
